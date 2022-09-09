@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Pages/Home/Home';
+import NavBar from './Pages/Share/NavBar';
+import { Routes, Route} from "react-router-dom";
+import Footer from './Pages/Share/Footer';
+import LogIn from './Pages/LogIn.js/LogIn';
+import SignUp from './Pages/LogIn.js/SignUp';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import RequiredAuth from './Pages/Share/RequiredAuth';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Orders from './Pages/Dashboard/Orders';
+import AddProduct from './Pages/Dashboard/AddProduct';
+import Users from './Pages/Dashboard/Users';
+import CartProduct from './Pages/Dashboard/CartProduct';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="home" element={<Home/>} />
+        <Route path="login" element={<LogIn/>} />
+        <Route path="signup" element={<SignUp/>} />
+        <Route path="dashboard" element={
+        <RequiredAuth><Dashboard/></RequiredAuth>}>
+       <Route index element={<Orders/>}></Route>
+       <Route path='addProduct' element={<AddProduct/>}></Route>
+       <Route path='users'element={<Users/>}></Route>
+       <Route path='cartProduct'  element={<CartProduct/>}></Route>
+        </Route>
+      </Routes>
+      <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

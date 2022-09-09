@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "product": "ENGINE OIL PUMP COVER",
+        "price": "7",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "Delivery": "5 Days",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/1R5S3Y0/engine-oil-pump-cover-500x500.jpg"
+    },
+    {
+        "id": 2,
+        "product": "VEHICLE MOTOR CRANKSHAFT",
+        "price": "7",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/DWd3pdW/vehicle-motor-crankshaft-500x500.jpg"
+    },
+    {
+        "id": 3,
+        "product": "CONTROL VALVE",
+        "price": "7",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/xJx9D42/control-valve-500x500.jpg'"
+    },
+    {
+        "id": 4,
+        "product": "HYDRAULIC PUMP",
+        "price": "50",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/grCnSgH/hydraulic-pump-500x500.jpg"
+
+    },
+    {
+        "id": 5,
+        "product": "FLYWHEEL RING",
+        "price": "7",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/2NS6Grj/automotive-water-pump-500x500.jpg"
+    },
+    {
+        "id": 6,
+        "product": "AUTOMOTIVE WATER PUMP",
+        "price": "7",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/2NS6Grj/automotive-water-pump-500x500.jpg"
+    },
+    {
+        "id": 7,
+        "product": "AUTOMOTIVE PISTON RING",
+        "price": "8",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/cXGChJ4/aluminum-piston-500x500.jpg"
+    },
+    {
+        "id": 8,
+        "product": "GEAR BEARING",
+        "price": "7",
+        "order": "MIN. & MAX.  ORDER5-100 PIECE",
+        "minimum": "5 Piece",
+        "brand": "JEKULA",
+        "model": "STD",
+        "material": "Stainless Steel , Aluminium, Brass",
+        "description": "We are the Best supplier of Engine Oil Pump Cover. Developed for Engine Factory Avadi the pump provides lubrication to all the moving parts in the engine.",
+        "feature": "High efficiency Optimum functionality  Easy maintenanceRigid  construction  High pumping  efficiencyOther Products",
+        "img": "https://i.ibb.co/BZmb2sm/gear-bearing-500x500.jpg"
+    }
+]
