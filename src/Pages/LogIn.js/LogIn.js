@@ -81,7 +81,7 @@ const LogIn = () => {
                                               message: 'provide a valid Email' 
                                             }
                                           })}
-                                        type="email" id="email" name="email" className="w-full secondary-color  rounded border border-black text-black   focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                        type="email" id="email" name="email" className="w-full secondary-color  rounded border border-black text-gray-900   focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                          
                                          <label for="email" className="leading-7 text-sm text-gray-600 text-left">
                                          {errors.email?.type === 'required' && <span className='label-text-alt text-red-500 '>{errors.email.message}</span>}
@@ -108,7 +108,7 @@ const LogIn = () => {
                                               
                                              
                                            })}
-                                        type="text" id="password" name="password" className="w-full secondary-color  rounded border border-black text-black   focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-outt" />
+                                        type="text" id="password" name="password" className="w-full secondary-color  rounded border border-black text-gray-900 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-outt" />
                                         <label for="email" className="leading-7 text-sm text-gray-600 text-left">
                                          {errors.password?.type === 'required' && <span className='label-text-alt text-red-500 '>{errors.password.message}</span>}
                                          {errors.password?.type === 'minLength' && <span className='label-text-alt text-red-500 '>{errors.password.message}</span>}

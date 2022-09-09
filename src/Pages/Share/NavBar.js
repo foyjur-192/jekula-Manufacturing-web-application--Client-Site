@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
 import auth from '../../firebase.init';
+import useAdmin from '../../Hook/useAdmin';
 
 const NavBar = () => {
+  const [user] = useAuthState (auth );
+  const [admin] = useAdmin(user); 
 
   const [saves , setSaved] = useState([]);
   const [orders , setOrder] = useState([]);
@@ -27,7 +30,7 @@ useEffect( ()=>{
 
 
 
-  const [user, loading, error] = useAuthState (auth );
+ 
   const Logout = () => {
     signOut (auth);
    localStorage.removeItem('accessToken');
@@ -95,7 +98,7 @@ useEffect( ()=>{
         }
       
         {
-          user && <li><Link to='/dashboard'>Dashboard</Link> </li>
+         admin && <li><Link to='/dashboard'>Dashboard</Link> </li>
         }
 
         <li><a>Settings</a></li>

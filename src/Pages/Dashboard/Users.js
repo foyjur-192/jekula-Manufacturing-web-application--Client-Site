@@ -3,6 +3,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Share/Loading';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import UserData from './UserData';
 
 
 const Users = () => {
@@ -20,20 +21,20 @@ const Users = () => {
 
 
 
-    const makeAdmin = () => {
+    // const makeAdmin = () => {
 
-        fetch(`http://localhost:5000/user/admin/${user}`, {
-            method: 'PUT',
-            headers: {
-                authorization: `Bearer ${localStorage.getItem('accessToken')}`
-            }
-        })
+    //     fetch(`http://localhost:5000/user/admin/${user}`, {
+    //         method: 'PUT',
+    //         headers: {
+    //             authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    //         }
+    //     })
 
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
-    }
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         console.log(data);
+    //     })
+    // }
 
 
 
@@ -76,18 +77,14 @@ const Users = () => {
  
              {
                 users.map(user => 
-                    <tr>
-                    <td class="px-4 py-3 text-black">{user.email}</td>
-                    <td class="px-4 py-3 text-black  "><button onClick={makeAdmin} class="btn btn-xs">Make Admin</button></td>
-                    <td class="px-4 py-3 text-black  "><button class="btn btn-sm">Remove</button></td>
-              
-                  </tr>
- 
-               
+                   <UserData
+                   key={user._id}
+                   user={user}
+                   refetch={refetch}
+                   >
+                   </UserData>
+
                 )
- 
- 
- 
              }
  
  
