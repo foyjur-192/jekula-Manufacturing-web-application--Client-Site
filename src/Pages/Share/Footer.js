@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             <footer class="text-white body-font">
-  <div class="container px-5 py-24 mx-auto bg-slate-900 ">
+  <div class="container px-5 py-24 mx-auto bg-slate-900 shadow ">
     <div class="flex flex-wrap md:text-left text-center order-first">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-white uppercase tracking-widest text-sm mb-3">Wholesale Fashion Couture</h2>

@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
@@ -87,7 +86,7 @@ const CartProduct = () => {
             <tr key={save._id}>
              <td class="px-4 py-3 text-black">{save.name}</td>
              <td class="px-4 py-3 text-black">{save.quantity}</td>
-             <td class="px-4 py-3 text-black  ">{save.total}</td>
+             <td class="px-4 py-3 text-black  ">${save.total}</td>
              <td class="px-4 py-3 text-black ">{save.model}</td>  
            </tr>
            </>

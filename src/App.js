@@ -16,11 +16,13 @@ import CartProduct from './Pages/Dashboard/CartProduct';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from './firebase.init';
 import useAdmin from './Hook/useAdmin';
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import RequiredAdmin from './Pages/Share/RequiredAdmin';
 
 function App() {
   const [user] = useAuthState (auth );
-  const [admin] = useAdmin(user); 
+ 
 
 
 
@@ -29,17 +31,17 @@ function App() {
     <div className="App">
       <NavBar/>
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="home" element={<Home/>} />
         <Route path="login" element={<LogIn/>} />
         <Route path="signup" element={<SignUp/>} />
-        { admin && <Route path="dashboard" element={
-        <RequiredAuth><Dashboard/></RequiredAuth>}>
+         <Route path="dashboard" element={
+        <RequiredAuth><RequiredAdmin ><Dashboard/> </RequiredAdmin></RequiredAuth>}>
        <Route index element={<Orders/>}></Route>
        <Route path='addProduct' element={<AddProduct/>}></Route>
        <Route path='users'element={<Users/>}></Route>
        <Route path='cartProduct'  element={<CartProduct/>}></Route>
-        </Route>}
+        </Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer />

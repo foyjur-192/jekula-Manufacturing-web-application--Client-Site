@@ -55,11 +55,11 @@ const changeContent = (inventories) => {
 <div class="modal">
   <div class="modal-box w-11/12 max-w-5xl">
   <label for="my-modal-2" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-  <h1 className='font-normal uppercase text-3xl text-center bg-color text-black p-5'>10% Off Last Chance</h1> 
+  <h1 className='font-normal uppercase text-3xl  bg-color text-black p-5'>10% Off Last Chance</h1> 
   <section class="text-gray-600 body-font mb-24">
-  <div class=" px-5 py-24 mx-auto">
+  <div class=" px-5 py-16 mx-auto">
     <div class="flex flex-col text-center w-full mb-8">
-    <h1 class="text-gray-900 text-4xl title-font font-bold uppercase mb-4">Our Product</h1>
+    <h1 class="text-gray-900 text-4xl title-font font-bold uppercase mb-8">Offer Products</h1>
 
     </div>
     <div class="flex flex-wrap -m-4 text-center">
@@ -69,8 +69,9 @@ const changeContent = (inventories) => {
 {
   inventories.slice(0, 3).map(inventory => 
     <>
-      <div class="p-4 md:w-72 sm:w-1/2 w-full block overflow-hidden ">
-    <div class="border-2  border-gray-200 px-4  min-h-[432px]  max-h-[432px] flex items-stretch   relative rounded-lg ">
+      <div class=" mr-7  md:w-72 sm:w-1/2 w-full block overflow-hidden ">
+    <div class="border-2  border-gray-200 sm:mb-5 px-4  min-h-[432px]  max-h-[432px] flex items-stretch   relative rounded-lg ">
+     <p className='text-4xl font-light absolute mt-5'> <span className='text-4xl font-bold  '>10%</span> OFF</p>
       <div className='self-center'>
       <img  src={inventory.img} alt='ima'/>
       </div>
@@ -80,10 +81,10 @@ const changeContent = (inventories) => {
     <div className='text-left'>
         <div className='flex justify-between mt-4 '>
         <h1 className='uppercase font-medium text-lg' >{inventory.product}</h1>
-        <h1 className='uppercase font-bold '>${inventory.price}Per Piece</h1>
+        <h1 className='uppercase font-bold text-right '>${inventory.price}Per Piece</h1>
 </div>
-<div className='flex justify-between mt-4 '>
-<h1 className='uppercase'>{inventory.order} </h1>
+<div className='flex justify-between mt-4  '>
+<h1 className='uppercase font-normal  '>{inventory.order} </h1>
 <label for="my-modal-3" onClick={() => changeContent(inventory)}   class="cursor-pointer px-3 py-1 uppercase font-medium btn bg-color border-none text-black hover:text-white ">Details</label>
 </div>
         </div>
@@ -97,27 +98,6 @@ const changeContent = (inventories) => {
        
      
        
-   
-
-      {/* <ReactImageMagnify {...{
- 
-    smallImage: {
-        alt: 'Wristwatch by Ted Baker London',
-        isFluidWidth: true,
-        src: 'https://i.ibb.co/1R5S3Y0/engine-oil-pump-cover-500x500.jpg'
-    },
-    
-    largeImage: {
-        src:  'https://i.ibb.co/1R5S3Y0/engine-oil-pump-cover-500x500.jpg',
-        width: 500,
-        height: 375,
-        
-        
-    }
-}} /> */}
-{/* Popup */}
-
-
 
 
 
@@ -150,14 +130,13 @@ popUpContents.map(inventory =>
                 </form>
                
 
-  {
-      total.map(totals => 
-        <>
-        <p className='font-medium text-xl'>Total Price: {totals}</p>
-        </>
+ 
+  
+      
+        <p className='font-medium text-xl'>Total Price: {total}</p>
+   
         
-        )
-    }   
+     
               
    <div>
    </div>
@@ -195,77 +174,7 @@ popUpContents.map(inventory =>
    <div>
    <p className='font-bold text-3xl mt-12 text-left mb-8'>Other Products</p>
   
-   <div className='flex justify-between'>
 
-  <div className='lg:w-72 sm:w-1/2 w-full  h-full overflow-hidden'> 
- 
-        <div class="border-2  border-gray-200 px-4 py-24 rounded-lg  relative">
-        <img src='https://i.ibb.co/DWd3pdW/vehicle-motor-crankshaft-500x500.jpg' alt='ima'/>
-        
-        
-  
-        </div>
-        <div className='text-left mt-8'>
-        <div className='flex justify-between mt-4 '>
-        <h1 className='uppercase font-medium text-lg' >Vehicle Motor Crankshaft</h1>
-        <h1 className='uppercase font-bold text-right '>$7 per Piece</h1>
-
-</div>
-<div className='flex justify-between mt-4 '>
-<h1 className='uppercase'>Min. & Max. Order <br/> 5-100 Piece  </h1>
-<p  className='uppercase cursor-pointer font-bold '>Details</p>
-</div>
-        </div>
-   
-      </div>
-
-  
-  <div className='lg:w-72  sm:w-1/2 w-full mr-3 h-full overflow-hidden'> 
- 
-        <div class="border-2  border-gray-200 px-4 py-24 rounded-lg  relative">
-        <img src='https://i.ibb.co/DWd3pdW/vehicle-motor-crankshaft-500x500.jpg' alt='ima'/>
-        
-        
-  
-        </div>
-        <div className='text-left mt-8'>
-        <div className='flex justify-between mt-4 '>
-        <h1 className='uppercase font-medium text-lg' >Vehicle Motor Crankshaft</h1>
-        <h1 className='uppercase font-bold text-right '>$7 per Piece</h1>
-
-</div>
-<div className='flex justify-between mt-4 '>
-<h1 className='uppercase'>Min. & Max. Order <br/> 5-100 Piece  </h1>
-<p  className='uppercase cursor-pointer font-bold '>Details</p>
-</div>
-        </div>
-   
-      </div>
-  <div className='lg:w-72 sm:w-1/2 w-full mr-3 h-full overflow-hidden'> 
- 
-        <div class="border-2  border-gray-200 px-4 py-24 rounded-lg  relative">
-        <img src='https://i.ibb.co/DWd3pdW/vehicle-motor-crankshaft-500x500.jpg' alt='ima'/>
-        
-        
-  
-        </div>
-        <div className='text-left mt-8'>
-        <div className='flex justify-between mt-4 '>
-        <h1 className='uppercase font-medium text-lg' >Vehicle Motor Crankshaft</h1>
-        <h1 className='uppercase font-bold text-right '>$7 per Piece</h1>
-
-</div>
-<div className='flex justify-between mt-4 '>
-<h1 className='uppercase'>Min. & Max. Order <br/> 5-100 Piece  </h1>
-<p  className='uppercase cursor-pointer font-bold '>Details</p>
-</div>
-        </div>
-   
-      </div>
-  
-     
-     
-  </div>
 
 
 

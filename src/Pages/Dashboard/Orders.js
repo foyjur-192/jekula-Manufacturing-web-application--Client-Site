@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 
 
@@ -41,7 +42,23 @@ const Orders = () => {
   }, [user])
   
 
-
+  //Delete Remove Order
+  const handleDelete = id => {
+    fetch(`http://localhost:5000/order${id}` ,{
+        method:'DELETE'
+    })
+    .then((result) => {
+        result.json().then((resp) => {
+            console.warn(resp)
+            if (resp.success) {
+              toast (`Successfully Added to Cart`)
+            }
+            const remaining = orders.filter(order => order._id !== id);
+            setOrders(remaining);
+      
+        })
+    })
+   }
 
 
 
@@ -76,6 +93,7 @@ const Orders = () => {
              <th class="px-4 py-3 title-font tracking-wider bg-gray-900 font-medium text-white text-sm uppercase bg-gray-100">Quantity of the Product</th>
              <th class="px-4 py-3 title-font tracking-wider bg-gray-900 font-medium text-white text-sm uppercase bg-gray-100">Total Price</th>
              <th class="px-4 py-3 title-font tracking-wider bg-gray-900 font-medium text-white text-sm uppercase bg-gray-100">Product Model</th>
+             <th class="px-4 py-3 title-font tracking-wider bg-gray-900 font-medium text-white text-sm uppercase bg-gray-100">Remove Item</th>
              
            </tr>
          </thead>
@@ -88,8 +106,9 @@ const Orders = () => {
              <tr>
              <td class="px-4 py-3 text-gray-900">{order.name}</td>
              <td class="px-4 py-3 text-black">{order.quantity}</td>
-             <td class="px-4 py-3 text-black  ">{order.total}</td>
+             <td class="px-4 py-3 text-black  ">${order.total}</td>
              <td class="px-4 py-3 text-black ">{order.model}</td>
+             <td class="px-4 py-3 text-black bg-color border-none hover:text-white btn mb-3 mt-3" onClick={() =>handleDelete(order._id)}>Remove Order</td>
            </tr>
                    
                    </>
