@@ -14,7 +14,7 @@ const CartProduct = () => {
   //   useEffect(() => {
   //     const getSavedProduct = async () => {
   //         const email = user.email;
-  //         const url = `http://localhost:5000/saved?email=${email}`;
+  //         const url = `https://jekula-manufacturing-server-production.up.railway.app/saved?email=${email}`;
   //         console.log(url);
   //         const { data } = await axios.get(url);
   //         setSave(data);
@@ -25,7 +25,7 @@ const CartProduct = () => {
 
   useEffect(() => {
     if (user) {
-        fetch(`http://localhost:5000/saved?user=${user.email}`, {
+        fetch(`https://jekula-manufacturing-server-production.up.railway.app/saved?user=${user.email}`, {
             method: 'GET',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`

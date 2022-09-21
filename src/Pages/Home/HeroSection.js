@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import hero from '../../assets/bg.png'
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -18,8 +19,8 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden  sm:mt-0  flex-end ml-1">
-            <img class="object-cover object-center w-full h-full -pr-2" src="https://i.ibb.co/XXz97dk/Group-3-2.png" alt="stats" />
+          <div class="lg:w-1/2 sm:w-1/3 w-full overflow-hidden  sm:mt-0  flex-end ml-1">
+            <img class=" w-full h-full -pr-2" src={hero} alt="stats" />
           </div>
         </div>
       </section>

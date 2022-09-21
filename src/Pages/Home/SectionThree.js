@@ -295,16 +295,51 @@ const SectionThree = () => {
                             <input type="checkbox" id="my-modal-10" class="modal-toggle" />
                             <div class="modal modal-bottom sm:modal-middle">
                               <div class="modal-box">
-                                <label for="my-modal-10" class="btn btn-sm btn-circle relative right-2 top-2">✕</label>
+                                <label for="my-modal-10" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                                 <h1 className='font-medium text-2xl'>Order </h1>
                                 <form className='mt-5' onSubmit={handleOrder}>
-                                  <div className='mb-8'>
-                                    <input type="text" name='name' value={inventory.product} placeholder="Order Quantity" class="input mb-2 input-primary w-full max-w-xs" /><br />
-                                    <input type="text" name='model' value={inventory.model} placeholder="Order Quantity" class="input mb-2  input-bordered input-primary w-full max-w-xs" /><br />
-                                    <input type="number" name='quantity' value={amount} class="input mb-2  input-bordered input-primary w-full max-w-xs" /><br />
-                                    <input type="number" name='total' value={total} placeholder="Order Quantity" class=" mb-4 input input-bordered input-primary w-full max-w-xs" /><br />
-                                    <input type="hidden" name='email' value={user?.email} placeholder="Order Quantity" class=" input input-bordered input-gray-300 w-full max-w-xs" /><br />
-                                    <button className='btn bg-color px-8 ml-2 border-none text-black hover:text-white'>Completed Order</button>
+                                  <div className=''>
+                                    <div class="form-control w-full text-black">
+                                      <label class="label">
+                                        <span class="label-text text-gray-600">Product Name</span>
+                                      </label>
+                                      <input type="text" name='name' value={inventory.product}   class="input secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+                                    <div class="form-control w-full  text-black">
+                                      <label class="label">
+                                        <span class="label-text text-gray-600">Product Quantity(Piece)</span>
+                                      </label>
+                                      <input type="text" name='quantity' value={amount}  class="input text-gray-600 secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+                                    <div class="form-control w-full text-black">
+                                      <label class="label">
+                                        <span class="label-text text-gray-600">Total Bill($)</span>
+                                      </label>
+                                      <input type="text" name='total' value={total}   class="input secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+                                    <div class="form-control w-full text-black">
+                                      <label class="label">
+                                        <span class="label-text text-gray-600">Card Number</span>
+                                      </label>
+                                      <input type="text" name='card' placeholder='2021 2543 2547 2134'  class="input secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+                                    <div class="form-control w-full  text-black">
+                                      <label class="label">
+                                        <span class="label-text text-gray-600">Card Pin</span>
+                                      </label>
+                                      <input type="text" name='pin' placeholder='Pin'   class="input secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+                                    <div class="form-control w-full  text-black">
+                                      <label class="label">
+                                        <span class="label-text text-gray-600">Expire Date</span>
+                                      </label>
+                                      <input type="text" name='password' placeholder='12/22'  class="input secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+                                    <div class="form-control w-full  text-black">
+                                      <input type="hidden" name='email' value={user?.email} placeholder='Card Password'  class="input secondary-color border-gray-400 input-bordered w-full " />
+                                    </div>
+
+                                    <button className='btn bg-color px-8 mt-6  border-none text-black hover:text-white'>Completed Order</button>
                                   </div>
                                 </form>
                               </div>
@@ -327,7 +362,7 @@ const SectionThree = () => {
 
 
 
-                      <div className='text-left mt-48 sm-64'> <p className='font-medium text-lg'>Description</p>
+                      <div className='text-left  sm-64'> <p className='font-medium text-lg'>Description</p>
                         <p>{inventory.description}</p>
                         <p className='font-medium text-lg mt-2'>Features</p>
                         <p>
