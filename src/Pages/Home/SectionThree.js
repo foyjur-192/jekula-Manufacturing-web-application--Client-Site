@@ -79,7 +79,7 @@ const SectionThree = () => {
     }
 
 
-    fetch('http://localhost:5000/order', {
+    fetch('https://jekula-manufacturing-server-production.up.railway.app/order', {
 
       method: 'POST',
       headers: {
@@ -117,7 +117,7 @@ const SectionThree = () => {
     }
     console.log(saved)
 
-    fetch('http://localhost:5000/saved', {
+    fetch('https://jekula-manufacturing-server-production.up.railway.app/saved', {
 
       method: 'POST',
       headers: {

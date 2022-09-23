@@ -19,7 +19,7 @@ const Orders = () => {
 
     useEffect(() => {
       if (user) {
-          fetch(`http://localhost:5000/order?user=${user.email}`, {
+          fetch(`https://jekula-manufacturing-server-production.up.railway.app/order?user=${user.email}`, {
               method: 'GET',
               headers: {
                   'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -44,7 +44,7 @@ const Orders = () => {
 
   //Delete Remove Order
   const handleDelete = id => {
-    fetch(`http://localhost:5000/order${id}` ,{
+    fetch(`https://jekula-manufacturing-server-production.up.railway.app/order${id}` ,{
         method:'DELETE'
     })
     .then((result) => {

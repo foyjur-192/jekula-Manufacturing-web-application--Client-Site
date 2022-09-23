@@ -6,7 +6,7 @@ const UserData = ({user, refetch}) => {
     console.log(email);
 
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://jekula-manufacturing-server-production.up.railway.app/user/admin/${email}`, {
         method: 'PUT',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

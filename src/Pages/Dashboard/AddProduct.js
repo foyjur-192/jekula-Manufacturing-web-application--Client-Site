@@ -43,7 +43,7 @@ const AddProduct = () => {
                     img: img
                    }
                    //Send to your Database
-                   fetch('http://localhost:5000/partAdded', {
+                   fetch('https://jekula-manufacturing-server-production.up.railway.app/partAdded', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

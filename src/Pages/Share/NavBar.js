@@ -31,7 +31,7 @@ const NavBar = () => {
     }
 
 
-    fetch('http://localhost:5000/contact', {
+    fetch('https://jekula-manufacturing-server-production.up.railway.app/contact', {
 
       method: 'POST',
       headers: {
@@ -62,7 +62,7 @@ const NavBar = () => {
   // get saved data
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/order?user=${user.email}`, {
+      fetch(`https://jekula-manufacturing-server-production.up.railway.app/order?user=${user.email}`, {
         method: 'GET',
         headers: {
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -87,7 +87,7 @@ const NavBar = () => {
   // get order data
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/saved?user=${user.email}`, {
+      fetch(`https://jekula-manufacturing-server-production.up.railway.app/saved?user=${user.email}`, {
         method: 'GET',
         headers: {
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`

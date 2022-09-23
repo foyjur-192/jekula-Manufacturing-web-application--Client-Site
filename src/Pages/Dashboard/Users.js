@@ -9,7 +9,7 @@ import UserData from './UserData';
 const Users = () => {
     const [user] = useAuthState(auth);
   
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://jekula-manufacturing-server-production.up.railway.app/user', {
         method: 'GET',
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -23,7 +23,7 @@ const Users = () => {
 
     // const makeAdmin = () => {
 
-    //     fetch(`http://localhost:5000/user/admin/${user}`, {
+    //     fetch(`https://jekula-manufacturing-server-production.up.railway.app/user/admin/${user}`, {
     //         method: 'PUT',
     //         headers: {
     //             authorization: `Bearer ${localStorage.getItem('accessToken')}`

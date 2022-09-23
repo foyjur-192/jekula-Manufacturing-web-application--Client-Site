@@ -21,7 +21,7 @@ const SectionSix = () => {
 
       }
 
-      fetch('http://localhost:5000/contact', {
+      fetch('https://jekula-manufacturing-server-production.up.railway.app/contact', {
 
          method: 'POST',
          headers: {
