@@ -1,20 +1,27 @@
-# Getting Started with Create React App
+# Project Name:
+Jekula Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description:
+Jekula Ltd produces Truck Spare parts and sells them locally and internationally. There is a fixed minimum and maximum order range if anyone wants more then they have to contact Jekula.
 
-## Available Scripts
+# Installation
+Technologies- React js, TailwindCSS, CSS, Node js, express js, Mongobd , JWT,Firebase
 
-In the project directory, you can run:
+# Usage:
+Features- Two sign-in option one is Email and password & Sign in with Google. user Can order Speare parts. See previous orders and delete them.
+Admin Dashboard- where an admin makes anyone admin from the user. admin can track the order and delete the user as well. Without admin, no one can make an admin. Admin dashboard will appear only when the admin will log in.
 
-### `npm start`
+# Features
+Log in and Sign up
+Order Product
+Manage Product
+Add Prodcut 
+Delete Product
+Manage Orders
+Delete users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
+#How to Contribute
+I'm very open with listening yours idea to improve the application
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
